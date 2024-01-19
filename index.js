@@ -32,7 +32,7 @@ function addGamesToPage(games) {
     for (let i =0; i< games.length; i++){
 
         // create a new div element, which will become the game card
-        var gameCard = document.createElement("div");
+        const gameCard = document.createElement("div");
 
         // add the class game-card to the list
         gameCard.classList.add("game-card");
@@ -41,11 +41,11 @@ function addGamesToPage(games) {
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
-        var gameImage = games[i].img;
+        const gameImage = games[i].img;
         gameCard.innerHTML = ` < img class = "game-img" src = ${gameImage} /> 
-        <b><center>${games[i].name}</b></center> 
-        <br>Description: $${games[i].description}</br>
-        <br>Goal: $${games[i].goal}</br> `;
+        <h3><b><center>${games[i].name}</b></center></h3> 
+        <p>Description: ${games[i].description}</p>
+        <p>Goal: $${games[i].goal}</p> `;
 
         // append the game to the games-container
         gamesContainer.appendChild(gameCard);
