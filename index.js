@@ -153,7 +153,7 @@ const unfundedGames = GAMES_JSON.filter((game) => {
 const numbUnfundedGames = unfundedGames.length;
 
 // create a string that explains the number of unfunded games using the ternary operator
-let displayStr = unfundedGames === 0 ? "No Unfunded games!" : `A total of $800,268 have been raised for all 11 games but there are still ${numbUnfundedGames} unfunded games. Please help us raise our funds, thank you!`;
+let displayStr = unfundedGames === 0 ? "No Unfunded games!" : `A total of $${totalRaised} have been raised for all ${GAMES_JSON.length} games but there are still ${numbUnfundedGames} unfunded games. Please help us raise our funds, thank you!`;
 
 // create a new DOM element containing the template string and append it to the description container
 const descriptionParagraph = document.createElement("p");
