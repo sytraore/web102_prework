@@ -35,6 +35,7 @@ Here's a walkthrough of implemented features:
 ## Notes
 
 Describe any challenges encountered while building the app.
+
 I faced some challenge to get each game's image displayed. I also struggled to use destructure and the spread operator.
 Other than that, the instructions were straightforward and helpful!
 
