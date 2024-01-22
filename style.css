@@ -39,7 +39,7 @@ body {
 }
 
 #num-contributions, #total-raised, #num-games {
-    font-size: 20px;
+    font-size: 50px;
 }
 
 #games-container {
