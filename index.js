@@ -159,6 +159,7 @@ let displayStr = unfundedGames === 0 ? "No Unfunded games!" : `A total of $${tot
 const descriptionParagraph = document.createElement("p");
 descriptionParagraph.innerHTML = `${displayStr}`;
 descriptionContainer.appendChild(descriptionParagraph);
+
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort 
@@ -172,7 +173,12 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
-
+const [topFundedGame, runnerUp] = sortedGames;
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-
+const topFundedGameElement = document.createElement("p");
+topFundedGameElement.innerHTML = `${topFundedGame.name}`;
+firstGameContainer.appendChild(topFundedGameElement);
 // do the same for the runner up item
+const runnerUpElement = document.createElement("p");
+runnerUpElement.innerHTML = `${runnerUp.name}`;
+secondGameContainer.appendChild(runnerUpElement);
